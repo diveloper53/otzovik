@@ -1,0 +1,169 @@
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.info-panel {
+    background: linear-gradient(to top right, #f3e072, #ff9f21);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    min-width: 65vw;
+    max-width: 750px;
+
+    min-height: 15vw;
+    max-height: 200px;
+
+    border-radius: 50px;
+    padding: 15px;
+    margin: 50px;
+}
+
+.info-panel-company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 25%;
+}
+
+.info-panel-company-logo {
+    filter: drop-shadow(0px 0px 2px #000000);
+    width: 30vw;
+}
+
+.info-panel-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2vw;
+    font-weight: 600;
+
+    height: 25%;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.comments-form {
+    background: linear-gradient(to top right, #eeeeee, #858585);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-width: 65vw;
+    max-width: 750px;
+
+    border-radius: 50px;
+    padding: 50px;
+    margin: 50px;
+}
+
+.comments-form-title {
+    font-size: 25px;
+    font-weight: 750;
+}
+
+.comments-form-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments-form-label {
+    font-style: italic;
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+.comments-form-label-needed {
+    color: red;
+}
+
+.comments-form-input {
+    border: solid 1px #000000;
+    border-radius: 10px;
+
+    font-size: 150%;
+
+    background-color: #f1f1f1
+}
+
+.comments-form-textarea {
+    height: 50px;
+    resize: none;
+}
+
+.comments-form-submit {
+    margin-top: 15px;
+
+    cursor: pointer;
+}
+
+.comments-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment {
+    display: flex;
+
+    width: 65vw;
+
+    border-radius: 50px;
+    background: #e4e4e4;
+
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.comment-avatar {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px
+}
+
+.comment-content {
+    margin-left: 15px;
+}
+
+.comment-username {
+    font-size: 115%;
+    font-weight: 750
+}
+
+@media (max-width: 750px) {
+    .info-panel {
+        min-width: 85vw;
+        min-height: 65vw;
+        flex-direction: column;
+    }
+
+    .info-panel-company-logo {
+        width: 80vw;
+    }
+
+    .info-panel-stats {
+        font-size: 5vw;
+    }
+
+    .comments-form {
+        width: 50vw;
+    }
+
+    .comment {
+        width: 80vw;
+    }
+}

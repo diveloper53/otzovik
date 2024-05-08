@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../templates/styles/main.css">
+    <link rel="stylesheet" href="../templates/styles/service.css">
+    <link rel="stylesheet" href="../templates/styles/stars.css">
+    <title>{{SITENAME_TEXT}} — {{SERVICE_NAME}}</title>
+</head>
+<body>
+    <header>
+        <a class="sitename" href="../">{{SITENAME_HEADER_TEXT}}</a>
+    </header>
+    <hr>
+    <div class="info">
+        <div class="info-panel">
+            <div class="info-panel-company">
+                <img class="info-panel-company-logo" src="./logo.png" alt="{{SERVICE_NAME}}">
+                <!-- <a class="info-panel-site" href="{{SERVICE_URL}}" target="_blank">{{SERVICE_URL}}</a> -->
+                <span class="info-panel-site">{{SERVICE_URL}}</span>
+            </div>
+            <div class="info-panel-stats">
+                <span class="info-panel-stats-rating">Рейтинг: <span class="rating-stars">{{SERVICE_RATING}}</span></span>
+                <span class="info-panel-stats-count">Количество отзывов: {{SERVICE_COMMENTS_COUNT}}</span>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="comments">
+        <form id="comments-form" class="comments-form" method="post" action="./#comments-form">
+            <span class="comments-form-title">Оставить отзыв</span>
+            <div class="comments-form-inputs">
+                <label class="comments-form-label">Имя пользователя<span class="comments-form-label-needed">*</span>:</label>
+                <input type="text" name="username" class="comments-form-input" required>
+                <label class="comments-form-label">Эл. Почта:</label>
+                <input type="email" name="email" class="comments-form-input">
+                <label class="comments-form-label">Оценка<span class="comments-form-label-needed">*</span>:</label>
+                <div class="comments-form-rate">
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rating" value="5" required/>
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" required/>
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" required/>
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" required/>
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" required/>
+                        <label for="star1" title="text">1 star</label>
+                    </div>
+                </div>
+                <label class="comments-form-label">Отзыв<span class="comments-form-label-needed">*</span>:</label>
+                <textarea class="comments-form-input comments-form-textarea" name="text" required></textarea>
+                <input type="submit" class="comments-form-input comments-form-submit" value="Публиковать">
+            </div>
+        </form>
+        <div class="comments-list">
+            {{COMMENTS_LIST}}
+        </div>
+    </div>
+    <hr>
+    <footer>
+        {{FOOTER_TEXT}}
+    </footer>
+</body>
+</html>

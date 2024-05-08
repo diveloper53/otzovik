@@ -1,0 +1,158 @@
+.forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+}
+
+.form {
+    background: linear-gradient(to top right, #eeeeee, #858585);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-width: 25vw;
+    max-width: 750px;
+
+    border-radius: 50px;
+    padding: 50px;
+    margin: 50px;
+}
+
+.form-title {
+    font-size: 25px;
+    font-weight: 750;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-style: italic;
+    font-weight: bold;
+
+    margin-top: 10px;
+}
+
+.form-label-needed {
+    color: red;
+}
+
+.form-input {
+    border: solid 1px #000000;
+    border-radius: 10px;
+
+    font-size: 150%;
+
+    background-color: #f1f1f1
+}
+
+.form-input-transparent {
+    border: none;
+
+    font-size: 150%;
+
+    background: none;
+}
+
+.form-textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.form-submit {
+    margin-top: 15px;
+
+    cursor: pointer;
+}
+
+.menu-button {
+    border: solid 1px #000000;
+    border-radius: 10px;
+
+    text-decoration: none;
+    text-align: center;
+    font-size: 150%;
+
+    color: black;
+    background-color: #f1f1f1;
+
+    margin: 10px;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    min-height: 100vh;
+}
+
+.service {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 50px;
+    background: #e4e4e4;
+
+    width: 90vw;
+
+    padding: 15px;
+    margin: 10px;
+}
+
+.service-info {
+    display: flex;
+}
+
+.service-logo {
+    height: 65px;
+}
+
+.rating-stars {
+    font-size: 125%;
+}
+
+.service-actions {
+    display: flex;
+}
+
+.service-button {
+    color: black;
+    background-color: #d4d4d4;
+
+    font-weight: 650;
+
+    border-radius: 25px;
+
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+
+    margin: 0px;
+    padding: 10px;
+}
+
+.create-service-button {
+    margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+    .service {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 750px) {
+    .form {
+        width: 50vw;
+    }
+}

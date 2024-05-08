@@ -1,0 +1,13 @@
+{
+    "sitename": "OTZOVIK.RU",
+    "sitename_header": "&star; OTZOVIK.RU",
+
+    "rating_stars_count": 5,
+    "rating_star_empty": "&star;",
+    "rating_star_filled": "&starf;",
+    "rating_star_filled_small": "&sstarf;",
+
+    "view_service_rating_button": "Смотреть отзывы на {{SERVICE_NAME}}",
+
+    "footer_text": "&copy; 2023 OTZOVIK.RU"
+}

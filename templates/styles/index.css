@@ -1,0 +1,61 @@
+.services-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    min-height: 100vh;
+}
+
+.service {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 50px;
+    background: #e4e4e4;
+
+    width: 90vw;
+
+    padding: 15px;
+    margin: 10px;
+}
+
+.service-info {
+    display: flex;
+}
+
+.service-logo {
+    height: 65px;
+}
+
+.rating-stars {
+    font-size: 125%;
+}
+
+.service-actions {
+    display: flex;
+}
+
+.service-view {
+    color: black;
+    background-color: #d4d4d4;
+
+    font-weight: 650;
+
+    border-radius: 25px;
+
+    text-align: center;
+    align-self: center;
+    text-decoration: none;
+
+    margin: 0px;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .service {
+        flex-direction: column;
+    }
+}
